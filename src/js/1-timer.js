@@ -36,7 +36,7 @@ function showNotificationError() {
 let userSelectedDate;
 
 const btnStart = document.querySelector('[data-start]');
-const inputDate = document.querySelector('[data-datetime]');
+const inputDate = document.querySelector('#datetime-picker');
 const valueDays = document.querySelector('[data-days]');
 const valueHours = document.querySelector('[data-hours]');
 const valueMinutes = document.querySelector('[data-minutes]');

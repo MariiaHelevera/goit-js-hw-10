@@ -16,7 +16,6 @@ function showNotificationError(delay) {
     icon: '',
     theme: 'dark',
     messageLineHeight: '24px',
-    iconColor: '#FFFFFF',
     });
 }
 
@@ -35,7 +34,6 @@ function showNotificationSuccess(delay) {
     icon: '',
     theme: 'dark',
     messageLineHeight: '24px',
-    iconColor: '#FFFFFF',
     });
 }
 
@@ -51,8 +49,9 @@ function onFormSubmit(e) {
         setTimeout(() => {
             if (state === 'fulfilled') {
                 resolve(delay);
+            } else {
+                reject(delay);
             }
-            reject(delay);
         }, delay);
     });
 
